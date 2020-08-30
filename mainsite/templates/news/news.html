@@ -1,1 +1,12 @@
 {% extends '../global/wrapper.html' %}
+{% block content %}
+    <div class="posts" style="color: white">
+    {% for post in posts %}
+        <div class="pos" style="text-align: left; max-width: 50%; margin: 5%">
+        <p>Published: {{ post.published_date }}</p>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
