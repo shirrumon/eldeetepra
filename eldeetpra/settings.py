@@ -54,7 +54,7 @@ ROOT_URLCONF = 'eldeetpra.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/shirru/Work/django_project/eldes/mainsite/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
